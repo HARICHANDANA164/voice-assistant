@@ -1,0 +1,13 @@
+# Changes for acme (v1 -> v2)
+
+- `business_hours.end`: `6:00pm` -> `17:00` (updated from onboarding input)
+- `business_hours.start`: `8:00am` -> `08:00` (updated from onboarding input)
+- `business_hours.timezone`: `America/Denver` -> `America/Chicago` (updated from onboarding input)
+- `call_transfer_rules.timeout`: `25 seconds` -> `35 seconds` (updated from onboarding input)
+- `emergency_definition`: `['burst pipe', 'active leak', 'no heat in winter']` -> `['active leak', 'burst pipe', 'gas smell', 'no heat in winter']` (updated from onboarding input)
+- `emergency_routing_rules.fallback`: `Dispatch manager 303-555-1001` -> `Operations lead 303-555-2001` (updated from onboarding input)
+- `emergency_routing_rules.order`: `['On-call technician line 303-555-1000', 'Dispatch manager 303-555-1001']` -> `['Senior dispatcher 303-555-2000', 'Operations lead 303-555-2001']` (updated from onboarding input)
+- `non_emergency_routing_rules`: `schedule callback for next business slot` -> `Collect caller details and schedule callback during business hours.` (updated from onboarding input)
+- `notes`: `Auto-extracted from transcript on 2026-03-03T07:53:37.715068+00:00` -> `Updated from onboarding on 2026-03-03T07:53:37.716764+00:00` (updated from onboarding input)
+- `questions_or_unknowns`: `[]` -> `['Missing office_address']` (updated from onboarding input)
+- `services_supported`: `['plumbing', 'drain cleaning', 'water heater']` -> `['drain cleaning', 'plumbing', 'sewer scope', 'water heater']` (updated from onboarding input)

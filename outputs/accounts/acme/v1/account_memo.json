@@ -1,0 +1,41 @@
+{
+  "account_id": "acme",
+  "company_name": "Acme Home Services",
+  "business_hours": {
+    "days": "Mon-Fri",
+    "start": "8:00am",
+    "end": "6:00pm",
+    "timezone": "America/Denver"
+  },
+  "office_address": "100 Main St, Denver CO",
+  "services_supported": [
+    "plumbing",
+    "drain cleaning",
+    "water heater"
+  ],
+  "emergency_definition": [
+    "burst pipe",
+    "active leak",
+    "no heat in winter"
+  ],
+  "emergency_routing_rules": {
+    "order": [
+      "On-call technician line 303-555-1000",
+      "Dispatch manager 303-555-1001"
+    ],
+    "fallback": "Dispatch manager 303-555-1001"
+  },
+  "non_emergency_routing_rules": "schedule callback for next business slot",
+  "call_transfer_rules": {
+    "timeout": "25 seconds",
+    "retries": 2,
+    "transfer_fail_message": "I'm unable to connect you right now; I'll send this as urgent and arrange a quick callback."
+  },
+  "integration_constraints": [
+    "never create sprinkler jobs in ServiceTrade"
+  ],
+  "after_hours_flow_summary": "Greet, identify urgency, collect name/number/address for emergencies, transfer to on-call, fallback to urgent callback.",
+  "office_hours_flow_summary": "Greet, capture reason for call, collect minimal contact info, transfer/route, confirm next steps, close politely.",
+  "questions_or_unknowns": [],
+  "notes": "Auto-extracted from transcript on 2026-03-03T07:53:37.715068+00:00"
+}

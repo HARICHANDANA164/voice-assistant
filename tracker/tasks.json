@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "account_id": "acme",
+      "latest_version": "v2",
+      "status": "onboarding_processed",
+      "history": [
+        {
+          "version": "v1",
+          "status": "demo_processed",
+          "at": "2026-03-03T07:53:37.716106+00:00"
+        },
+        {
+          "version": "v2",
+          "status": "onboarding_processed",
+          "at": "2026-03-03T07:53:37.717725+00:00"
+        }
+      ]
+    }
+  ]
+}

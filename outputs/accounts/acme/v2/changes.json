@@ -1,0 +1,94 @@
+[
+  {
+    "field": "business_hours.end",
+    "old": "6:00pm",
+    "new": "17:00",
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "business_hours.start",
+    "old": "8:00am",
+    "new": "08:00",
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "business_hours.timezone",
+    "old": "America/Denver",
+    "new": "America/Chicago",
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "call_transfer_rules.timeout",
+    "old": "25 seconds",
+    "new": "35 seconds",
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "emergency_definition",
+    "old": [
+      "burst pipe",
+      "active leak",
+      "no heat in winter"
+    ],
+    "new": [
+      "active leak",
+      "burst pipe",
+      "gas smell",
+      "no heat in winter"
+    ],
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "emergency_routing_rules.fallback",
+    "old": "Dispatch manager 303-555-1001",
+    "new": "Operations lead 303-555-2001",
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "emergency_routing_rules.order",
+    "old": [
+      "On-call technician line 303-555-1000",
+      "Dispatch manager 303-555-1001"
+    ],
+    "new": [
+      "Senior dispatcher 303-555-2000",
+      "Operations lead 303-555-2001"
+    ],
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "non_emergency_routing_rules",
+    "old": "schedule callback for next business slot",
+    "new": "Collect caller details and schedule callback during business hours.",
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "notes",
+    "old": "Auto-extracted from transcript on 2026-03-03T07:53:37.715068+00:00",
+    "new": "Updated from onboarding on 2026-03-03T07:53:37.716764+00:00",
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "questions_or_unknowns",
+    "old": [],
+    "new": [
+      "Missing office_address"
+    ],
+    "reason": "updated from onboarding input"
+  },
+  {
+    "field": "services_supported",
+    "old": [
+      "plumbing",
+      "drain cleaning",
+      "water heater"
+    ],
+    "new": [
+      "drain cleaning",
+      "plumbing",
+      "sewer scope",
+      "water heater"
+    ],
+    "reason": "updated from onboarding input"
+  }
+]
