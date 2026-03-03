@@ -1,0 +1,12 @@
+company: Acme Home Services
+business hours: Mon-Fri 8:00am to 6:00pm
+timezone: America/Denver
+address: 100 Main St, Denver CO
+services: plumbing, drain cleaning, water heater
+emergency means burst pipe, active leak, no heat in winter
+primary contact: On-call technician line 303-555-1000
+fallback: Dispatch manager 303-555-1001
+non emergency routing: schedule callback for next business slot
+integration constraints: never create sprinkler jobs in ServiceTrade
+transfer timeout: 25 seconds
+retries: 2

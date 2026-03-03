@@ -1,0 +1,66 @@
+{
+  "name": "clara-zero-cost-pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "clara-pipeline",
+        "httpMethod": "POST",
+        "responseMode": "responseNode"
+      },
+      "id": "Webhook_Trigger",
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "command": "python3 scripts/process_calls.py --input-root {{$json.input_root || 'dataset'}} --output-root {{$json.output_root || 'outputs'}} --tracker-path {{$json.tracker_path || 'tracker/tasks.json'}}"
+      },
+      "id": "Run_Pipeline",
+      "name": "Run Pipeline",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [470, 300]
+    },
+    {
+      "parameters": {
+        "responseBody": "={{ {\"status\":\"ok\",\"stdout\":$json.stdout,\"stderr\":$json.stderr} }}",
+        "responseCode": 200
+      },
+      "id": "Respond",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [760, 300]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Run Pipeline",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run Pipeline": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

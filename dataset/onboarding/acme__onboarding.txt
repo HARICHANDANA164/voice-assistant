@@ -1,0 +1,6 @@
+company: Acme Home Services
+services: plumbing, drain cleaning, sewer scope
+emergency means burst pipe, gas smell, no heat in winter
+primary contact: Senior dispatcher 303-555-2000
+fallback: Operations lead 303-555-2001
+transfer timeout: 35 seconds
